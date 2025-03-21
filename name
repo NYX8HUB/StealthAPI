@@ -1,0 +1,35 @@
+local uas = "StealthAPI/RobloxApp/1.0"
+local oldr = request
+getgenv().request = function(options)
+    if options.Headers then
+        options.Headers["User-Agent"] = uas
+    else
+        options.Headers = {["User-Agent"] = uas}
+    end
+    local response = oldr(options)
+    return response
+end
+wait()
+local uas = "StealthAPI/RobloxApp/1.0"
+local oldr = request
+getgenv().request = function(options)
+    if options.Headers then
+        options.Headers["User-Agent"] = uas
+    else
+        options.Headers = {["User-Agent"] = uas}
+    end
+    local response = oldr(options)
+    return response
+end
+wait(1)
+local uas = "StealthAPI/RobloxApp/1.0"
+local oldr = request
+getgenv().request = function(options)
+    if options.Headers then
+        options.Headers["User-Agent"] = uas
+    else
+        options.Headers = {["User-Agent"] = uas}
+    end
+    local response = oldr(options)
+    return response
+end
